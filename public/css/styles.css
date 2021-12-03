@@ -30,23 +30,32 @@ header{
     padding: 0px;
 }
 
-.btn-btn-primary{
+.btn-primary{
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+    border: 3px solid white;
+    padding: 6px;
+    margin-left: 6px;
+}
+.btn-primary:hover{
     background-color: #535353;
     border: 3px solid #535353;
-    padding: 2px;
+    margin-left: 6px;
+    padding: 6px;
 }
-
-.btn-btn-primary:hover{
+.msg{
     background-color: #535353;
-    border: #535353;
-    padding: 4px;
-    
+    color: white;
+    border: 1px solid #535353;
+    width: 100%;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 10px;
 }
-
 #navbar img{
     width: 40px;
 }
-
 #navbar{
     justify-content: space-between;
     background-color: white;
@@ -99,11 +108,11 @@ header{
 }
 
 #events-container .card{
-    flex: 1 1 0;
+    flex: 1 1 24%;
     max-width: 25%;
     border-radius: 10px;
     padding: 1px;
-    margin: 30px;
+    margin: 0.5%;
 }
 
 #events-container img{
@@ -132,4 +141,21 @@ footer{
     position: absolute;
     bottom: 0px;
     width: 100%;
+}
+
+/* Event create container*/
+#event-create-container{
+    padding: 30px;
+    margin: auto;
+}
+#event-create-container label{
+    font-weight: bold;
+}
+.form-group{
+    padding: 10px;
+}
+#event-create-container input,
+#event-create-container select,
+#event-create-container textarea{
+    font-size: 12px;
 }

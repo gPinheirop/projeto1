@@ -40,10 +40,19 @@
                 </div>
             </nav>
         </header>
-        @yield('content')
-    <footer>
-        <p>Projeto Laravel Para eventos &copy;2021</p>
-    </footer>
+        <main>
+            <div class="container-fluid">
+                    <div class="row">
+                        @if(session('msg'))
+                            <p class="msg">{{ session('msg') }}</p>
+                        @endif
+                        @yield('content')
+                    </div>
+                </div>
+        </main>
+        <footer>
+            <p>Projeto Laravel Para eventos &copy;2021</p>
+        </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
