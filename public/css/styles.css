@@ -20,6 +20,10 @@ a:hover{
     color: black;
     text-decoration: underline;
 }
+a.feedback{
+    color: black;
+    text-decoration: underline;
+}
 
 header{
     background-color: #fff;
@@ -174,6 +178,27 @@ header{
 #itens-list li{
     display: flex;
 }
+/* Dashboard*/
+.dashboard-title-container{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.dashboard-events-container th{
+    width: 25%;
+}
+.dashboard-events-container form{
+    display: inline-block;
+}
+/* edit event*/
+
+.img-preview{
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
 /* Event footer*/
 footer{
     text-align: center;
